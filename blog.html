@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - By Ritika</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 99vw;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+        }
+
+        .text {
+            text-align: center;
+            /* padding: 2rem; */
+        }
+
+        .grid {
+            /* height: 100vh; */
+            /* width: 100vw; */
+            margin: 20px 190px;
+            display: grid;
+            /* border: 2px solid black; */
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.3rem;
+        }
+
+        .item {
+            height: 350px;
+            border-radius: 12px;
+            /* width: 300px; */
+            border: 1px solid rgb(223, 223, 223);
+            box-shadow: 1px 1px 12px 0px black;
+            overflow: hidden;
+        }
+
+        .item img {
+            width: 100%;
+            height: 45%;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .item h3{
+            margin: 10px;
+        }
+        .item h3 a{
+            text-decoration: none;
+            color: black;
+        }
+        .item h3 a:hover{
+            color: blueviolet;
+        }
+        .item:hover > img {
+            /* overflow: hidden; */
+            transform: scale(1.1);
+            transition-duration: 200ms;
+    
+        }
+
+        .item p {
+            margin: 13px;
+            text-align: left;
+            font-size: 0.8rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(144, 143, 143);
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+        }
+
+        .user {
+            display: flex;
+            /* flex-direction: column; */
+            /* justify-content: space-evenly; */
+        }
+
+        .user img {
+            margin: 5px;
+            height: 40px;
+            width: 40px;
+        }
+
+        .user p {
+            margin: 8px;
+        }
+
+        .user p span {
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        .bottom button {
+            margin-bottom: 10px;
+            /* width: 85px; */
+            padding: 5px;
+            text-align: center;
+            /* height: 29px; */
+            border: 1px solid rgb(158, 157, 157);
+            border-radius: 5px;
+            background-color: rgba(240, 239, 239, 0.333);
+            /* width: 30px; */
+        }
+
+        @media (max-width:720px) {
+            .main{
+                width:100%;
+            }
+            .grid {
+                /* margin: 20px 1px; */
+                margin: 0px;
+                padding: 15px;
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.1rem;
+            }
+
+            .item h3 {
+                font-size: 15px;
+            }
+
+            .user img {
+                /* align-self: flex-end; */
+                /* margin: 5px; */
+                height: 30px;
+                width: 30px;
+            }
+
+            .user p {
+                margin: 0.4rem;
+                font-size: 10px;
+            }
+
+            .user p span {
+                color: blueviolet;
+                font-weight: bold;
+            }
+
+            .bottom button {
+                margin-bottom: 10px;
+                /* width: 85px; */
+                padding: 5px;
+                text-align: center;
+                /* height: 29px; */
+                border: 1px solid black;
+                border-radius: 5px;
+                background-color: rgba(226, 226, 226, 0.333);
+                /* width: 30px; */
+            }
+
+        }
+
+        .message{
+            height: 60px;
+            text-align: center;
+            background-color: rgb(216, 216, 216);
+            width: 60%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 15px;
+            position: sticky;
+            bottom: 0px;
+        }
+        .message a{
+            color: black;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        @media (max-width: 768px){
+            .message{
+            width:100%;
+        }
+        .message a{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="text">
+            <h1>Ritika Blogs</h1>
+            <br>
+            <p>Utilize this space to incorporate a captivating subheading crafted by ChatGPT, adding <br> depth and
+                intrigue to your blog.</p>
+        </div>
+        <div class="grid">
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_yPwKxLcUsOBYoAnNU8avc8etiQyV-MzK-Q&s"
+                    alt="">
+                <h3><a href="#">New Gadgets Released</a></h3>
+                <p>Check out the latest tech gadgets hitting the market, from smartphones to smarthwatches.</p>
+
+                <div class="bottom">
+                    <div class="user">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg0JOQ1TeU1L714P_ow1dunVPjiaiU2g_glQ&s"
+                            alt="">
+                        <p><span>John Doe </span><br> Sept 19, 2021</p>
+                    </div>
+                    <button>Technology</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXZB5PmWzjxfY3xHumTNPPpMa-7zrEIbo1aQ&s"
+                    alt="">
+                <h3><a href="#">Healthy Eating Tips</a></h3>
+                <p>Discover simple tips for maintaining a healthy diet and making nutritious food choices.</p>
+
+                <div class="bottom">
+                    <div class="user">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHY_Pfe9jPI7qEUGbkIrRaSck-Lfk5Qt71uQ&s"
+                            alt="">
+                        <p><span>Emily Smith</span> <br> August 5, 2021</p>
+                    </div>
+                    <button>Nutrition</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP8ilOOdG4ONbQsczbLxri9mR4DrhmTf2g8g&s"
+                    alt="">
+                <h3><a href="#">Travel Bucket List</a></h3>
+                <p>Explore breathtaking destination and add them to your travel bucket list for an unforgettable
+                    adventure.</p>
+
+                <div class="bottom">
+                    <div class="user">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh72XAAzZhkZCFOqcbjpLL0ZyDv6OFEwpLgQ&s"
+                            alt="">
+                        <p><span>David Johnson </span><br> June 28, 2021</p>
+                    </div>
+                    <button>Travel</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd9zaeKg4f0uK2ft78DqZxD4nOhxqAQjwv0g&s"
+                    alt="">
+                <h3><a href="#">Effective Time Management</a></h3>
+                <p>Learn time management techniques to boost productivity and balance work and personal life.</p>
+
+                <div class="bottom">
+                    <div class="user">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcRDQfqMT-SkMkfrcnuM7XRR03TLAxBM_qQ&s"
+                            alt="">
+                        <p><span>Sarah Wilson</span> <br> Sept 12, 2021</p>
+                    </div>
+                    <button>Productivity</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMB4UHNNUWk5-_vx0b4JYWgiIR0L3kxPRCPw&s"
+                    alt="">
+                <h3><a href="#">Art of Mindness</a></h3>
+                <p>Discover the power of mindfulness meditation for reducing stress and improving mental well-being.</p>
+
+                <div class="bottom">
+                    <div class="user">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMQpLkAkqvy3upnhIk6Qk6lsAasI8vOXlQNQ&s"
+                            alt="">
+                        <p><span>Mark Anderson</span> <br> July 19, 2021</p>
+                    </div>
+                    <button>Mindfulness</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0wfSQjhw-Dhe6iN9Qnd9YO40SHfqILOocFA&s"
+                    alt="">
+                <h3><a href="#">DIY Home Decor</a></h3>
+                <p>Get creative with DIY home decor projects that will transform your living space on a budget.</p>
+
+                <div class="bottom">
+                    <div class="user">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiTVFLlD1XJSo7KeORTUrRJ7Y6ZOfMB3bz1Q&s"
+                            alt="">
+                        <p><span>Laura Brwon</span> <br> August 30, 2021</p>
+                    </div>
+                    <button>Home Decor</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLEVxMpJ2YR9ga5HFTmgG2spE71rXq35cTog&s"
+                    alt="">
+                <h3><a href="#">Green Energy Solution</a></h3>
+                <p>Explore eco-friendly energy solutions for a sustainable future and reducing your carbon footprint.
+                </p>
+
+                <div class="bottom">
+                    <div class="user">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeSsqFLdVSYLzbrydSAfDvYiWOEq3PUnMnjA&s"
+                            alt="">
+                        <p><span>Michael Turner</span> <br> January 1, 2023</p>
+                    </div>
+                    <button>Sustainability</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKiDbFlJRKh4NqdLQ5FM8KYpIehPbXPK4sxA&s"
+                    alt="">
+                <h3><a href="#">The Power of Positivity</a></h3>
+                <p>Discover how a positive mindset can improve your life and lead to greater happiness and sucess.</p>
+
+
+                <div class="bottom">
+                    <div class="user">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0PP7rnqFNoxX1d9uOqedgirQuj0ewIMB-Q&s"
+                            alt="">
+                        <p><span>Rachel Clark</span> <br> October 10, 2023</p>
+                    </div>
+                    <button>Positivity</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message">
+        <a href="card.html">Go to previous page</a>
+        <a href="fullwebsite.html">Go to next page</a>
+    </div>
+
+    </div>
+    </script>
+</body>
+
+</html>
